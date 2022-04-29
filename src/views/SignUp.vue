@@ -73,7 +73,7 @@ h2 {
   width: 400px;
   padding: 30px 15px;
   border-radius: 3px;
-  box-shadow: 0px 0px 5px #130f40;
+  box-shadow: 0px 0px 15px #6ed4d2;
 }
 .form-group {
   width: 100%;
@@ -138,8 +138,8 @@ button {
   border-radius: 3px;
   font-weight: 700;
   font-size: 10px;
-  background-color: #4834d4;
-  color: #fff;
+  background-color: #7ed6df;
+  color: #130f40;
 }
 h4 {
   font-weight: 600;
@@ -147,7 +147,7 @@ h4 {
   color: #fff;
 }
 .sign-up {
-  color: #4834d4;
+  color: #7ed6df;
   text-decoration: none;
 }
 @media screen and (max-width: 600px) {
