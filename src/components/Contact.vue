@@ -1,0 +1,175 @@
+<template>
+  <section class="footer">
+    <div class="contact-wrapper">
+      <header class="contact-header">
+        <h2>Have something on your mind? Don’t be shy, contact us.</h2>
+      </header>
+      <div class="form-wrapper">
+        <form class="contact-form">
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" name="email" />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea name="message"></textarea>
+          </div>
+          <div class="form-button">
+            <button type="submit" class="submit-btn">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "Footer",
+};
+</script>
+
+<style scoped>
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 65vh;
+  background-color: #cdcdcd;
+}
+.contact-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 80%;
+}
+.contact-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  flex-shrink: 1;
+}
+.contact-header h2 {
+  font-size: 64px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  color: #1f1f1f;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: 40%;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 250px;
+  background-color: #ededed;
+  padding: 20px 30px;
+}
+.form-control {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.form-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-form input,
+textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+textarea {
+  min-height: 150px;
+}
+input {
+  min-height: 30px;
+}
+label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+button {
+  border: none;
+  outline: none;
+  min-width: 100px;
+  border-radius: 5px;
+  background-color: #cdcdcd;
+  padding: 7px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+@media screen and (max-width: 1100px) {
+  .contact-wrapper {
+    flex-direction: column;
+    margin: 2rem 0;
+    gap: 2rem;
+  }
+  .contact-header {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-header h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .form-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-form {
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact-wrapper {
+    width: 100%;
+    flex-direction: column;
+    margin: 2rem 0;
+    gap: 1rem;
+  }
+  .contact-header {
+    width: 90%;
+    justify-content: center;
+  }
+  .contact-header h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .form-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-form {
+    min-width: 80%;
+    padding: 10px 20px;
+  }
+  textarea {
+    min-height: 100px;
+  }
+}
+</style>
