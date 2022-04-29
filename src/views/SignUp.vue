@@ -51,7 +51,11 @@ export default {
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  background-color: #4834d4;
+  background-color: #7ed6df;
+  background-image: url("../assets/signup.svg");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: bottom left;
 }
 h2 {
   color: #ffffff;
@@ -147,6 +151,9 @@ h4 {
   text-decoration: none;
 }
 @media screen and (max-width: 600px) {
+  .signup {
+    background-image: none;
+  }
   .signup-form {
     max-width: 85%;
   }
