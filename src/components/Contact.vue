@@ -122,8 +122,8 @@ button {
   border-radius: 3px;
   font-weight: 700;
   font-size: 10px;
-  background-color: #4834d4;
-  color: #fff;
+  background-color: #7ed6df;
+  color: #130f40;
 }
 @media screen and (max-width: 1100px) {
   .contact-wrapper {
