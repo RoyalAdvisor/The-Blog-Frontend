@@ -7,7 +7,6 @@
       <a href="">
         <router-link :to="{ path: '/' }">Home</router-link>
       </a>
-      <a href="">About</a>
       <a href="">
         <router-link :to="{ path: '/signup' }">Sign Up</router-link>
       </a>
@@ -21,7 +20,6 @@
       <a href="">
         <router-link :to="{ path: '/' }" class="mobile">Home</router-link>
       </a>
-      <a href="" class="mobile">About</a>
       <a href="">
         <router-link :to="{ path: '/signup' }" class="mobile"
           >Sign Up</router-link
@@ -45,10 +43,10 @@ nav {
   align-items: center;
   flex-direction: row;
   min-height: 50px;
-  background-color: #ededed;
+  background-color: #130f40;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .nav-icon {
   width: 50%;
@@ -64,7 +62,7 @@ nav {
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
-  color: #1f1f1f;
+  color: #fff;
 }
 .nav-items {
   width: 50%;
@@ -109,7 +107,7 @@ nav {
     appearance: none;
     background: none;
     border: none;
-    z-index: 3;
+    z-index: 4;
     padding: 0;
     gap: 5px;
   }
@@ -124,15 +122,17 @@ nav {
     gap: 1rem;
     width: 100%;
     height: 100%;
-    background-color: #ededed;
-    z-index: 2;
+    background-color: #130f40;
+    z-index: 3;
     transition: all 0.2s;
   }
   .mobile-nav-items a {
     text-decoration: none;
     font-size: 15px;
     font-weight: 700;
-    color: #1f1f1f;
+    color: #ffffff;
+    width: 80%;
+    text-align: center;
   }
   .mobile-nav-items.active {
     right: 0;
@@ -144,7 +144,7 @@ nav {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #000;
+    background-color: #ffffff;
     transition: all 0.2s;
   }
 

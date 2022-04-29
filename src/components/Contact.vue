@@ -38,7 +38,7 @@ export default {
   flex-direction: column;
   width: 100%;
   min-height: 65vh;
-  background-color: #cdcdcd;
+  background-color: #130f40;
 }
 .contact-wrapper {
   position: relative;
@@ -63,7 +63,7 @@ export default {
   font-weight: 700;
   padding: 0;
   margin: 0;
-  color: #1f1f1f;
+  color: #fff;
 }
 .form-wrapper {
   display: flex;
@@ -79,8 +79,9 @@ export default {
   flex-direction: column;
   gap: 1rem;
   min-width: 250px;
-  background-color: #ededed;
-  padding: 20px 30px;
+  background-color: #130f40;
+  padding: 20px 15px;
+  border-radius: 3px;
 }
 .form-control {
   width: 100%;
@@ -98,8 +99,9 @@ export default {
 .contact-form input,
 textarea {
   border: none;
+  border-radius: 3px;
   outline: none;
-  width: 100%;
+  width: 98%;
 }
 textarea {
   min-height: 150px;
@@ -108,20 +110,20 @@ input {
   min-height: 30px;
 }
 label {
-  font-size: 15px;
-  font-weight: 700;
-  color: #1f1f1f;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
 }
 button {
-  border: none;
-  outline: none;
   min-width: 100px;
-  border-radius: 5px;
-  background-color: #cdcdcd;
-  padding: 7px 20px;
-  font-size: 14px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
   font-weight: 700;
-  color: #1f1f1f;
+  font-size: 10px;
+  background-color: #4834d4;
+  color: #fff;
 }
 @media screen and (max-width: 1100px) {
   .contact-wrapper {

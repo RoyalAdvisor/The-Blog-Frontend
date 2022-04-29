@@ -1,5 +1,6 @@
 <template>
   <section class="home">
+    <div class="overlay"></div>
     <header class="home-header">
       <h1>The Anything Blog.</h1>
     </header>
@@ -25,9 +26,9 @@
         <h2>Featured Blogs</h2>
       </header>
       <div class="blog-posts">
-        <div class="posts">1</div>
-        <div class="posts">2</div>
-        <div class="posts">3</div>
+        <div class="posts"></div>
+        <div class="posts"></div>
+        <div class="posts"></div>
       </div>
     </div>
     <div class="catergory">
@@ -35,47 +36,10 @@
         <h2>Catergory</h2>
       </header>
       <div class="catergory-container">
-        <div class="item">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            incidunt fugit doloremque et officiis numquam dolorem eaque,
-            excepturi dignissimos molestias ea ipsam omnis. Qui incidunt
-            repellendus necessitatibus deserunt mollitia atque quam, porro quas
-            quibusdam animi quae excepturi nam unde voluptates quo recusandae
-            expedita, praesentium provident suscipit dignissimos nihil fugiat
-            ex.
-          </p>
-        </div>
-        <div class="item">
-          <p>
-            Odit at, tempora alias nobis neque voluptates inventore consequuntur
-            delectus incidunt nostrum eveniet reiciendis repellendus obcaecati
-            dolores minima amet quasi dicta dignissimos doloremque adipisci
-            eligendi expedita. Tempore eos dicta optio cum nobis, culpa
-            architecto perspiciatis tenetur neque assumenda at quia
-            necessitatibus magnam aliquid numquam quam modi unde consequuntur
-            enim sit?
-          </p>
-        </div>
-        <div class="item">
-          <p>
-            Amet minus voluptas reprehenderit praesentium debitis assumenda eius
-            provident, voluptate commodi, necessitatibus possimus officiis enim
-            nisi eos aliquid, quas laboriosam ea neque tempore iusto itaque quis
-            vel nam. Voluptates, nam officia illum facilis ex ipsum consectetur
-            beatae delectus, maxime facere, voluptate molestias voluptatum?
-            Quam, tenetur totam molestias vel suscipit sit.
-          </p>
-        </div>
-        <div class="item">
-          <p>
-            Qui itaque harum eius aperiam iusto placeat? Nisi consequatur fugiat
-            sunt quae assumenda, eligendi quia dolores in et ex aperiam at omnis
-            vitae eius! Autem, mollitia! Soluta, magni eaque quos nulla autem,
-            non animi debitis deserunt, aliquam veritatis provident delectus
-            totam alias explicabo vitae quis dolorem id. Quae, amet sit?
-          </p>
-        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
       </div>
     </div>
   </div>
@@ -100,7 +64,17 @@ export default {
   flex-direction: column;
   width: 100%;
   min-height: 80vh;
-  background-color: #cdcdcd;
+  background-image: url("../assets/the-anything-blog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 80vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 .home-header {
   display: flex;
@@ -115,7 +89,8 @@ export default {
   font-weight: 700;
   padding: 0;
   margin: 0;
-  color: #1f1f1f;
+  color: #fff;
+  z-index: 1;
 }
 .home-banner {
   position: absolute;
@@ -125,13 +100,11 @@ export default {
   align-items: center;
   width: 100%;
   flex-direction: row;
-  gap: 1.5rem;
   min-height: 50px;
-  background-color: #ededed;
+  background-color: #130f40;
 }
 .banner-search {
   justify-content: center;
-  margin-right: 1.5rem;
   display: flex;
   align-items: center;
   width: 100%;
@@ -145,14 +118,19 @@ export default {
 .banner-search input {
   border: none;
   outline: none;
+  border-radius: 3px;
   min-width: 200px;
   padding: 5px;
   color: #1f1f1f;
+  text-align: center;
+  box-shadow: 0px 4px 4px 0px #130f40;
 }
 .banner-search input::placeholder {
   font-weight: 700;
   font-size: 12px;
-  font-style: italic;
+}
+.banner-search h2 {
+  color: #fff;
 }
 .home-description {
   display: flex;
@@ -217,7 +195,7 @@ export default {
 .catergory-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 200px;
+  grid-auto-rows: 300px;
   gap: 1.5rem;
   width: 80%;
   margin-bottom: 5rem;
@@ -261,14 +239,14 @@ export default {
   }
   .catergory-container {
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;
+    grid-auto-rows: minmax(300px, auto);
   }
   .blog-posts {
     flex-direction: column;
   }
   .posts {
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 600px) {

@@ -18,10 +18,10 @@ footer {
   align-items: center;
   flex-direction: row;
   min-height: 50px;
-  background-color: #ededed;
+  background-color: #130f40;
   font-size: 10px;
   font-weight: 600;
-  color: #1f1f1f;
+  color: #fff;
 }
 @media screen and (max-width: 600px) {
   footer {

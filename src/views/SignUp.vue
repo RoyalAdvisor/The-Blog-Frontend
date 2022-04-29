@@ -50,10 +50,11 @@ export default {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  min-height: 95vh;
+  min-height: 100vh;
+  background-color: #4834d4;
 }
 h2 {
-  color: #1f1f1f;
+  color: #ffffff;
   margin: 0;
   width: 100%;
   text-align: center;
@@ -63,12 +64,12 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #cdcdcd;
+  background-color: #130f40;
   gap: 1rem;
-  min-width: 20%;
+  width: 400px;
   padding: 30px 15px;
   border-radius: 3px;
-  box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0px 0px 5px #130f40;
 }
 .form-group {
   width: 100%;
@@ -100,7 +101,7 @@ label {
 .form-control label {
   font-size: 12px;
   font-weight: 600;
-  color: #1f1f1f;
+  color: #ffffff;
   margin: 0;
 }
 .form-control input {
@@ -132,15 +133,17 @@ button {
   border: none;
   border-radius: 3px;
   font-weight: 700;
-  font-size: 12px;
-  background-color: #ededed;
+  font-size: 10px;
+  background-color: #4834d4;
+  color: #fff;
 }
 h4 {
   font-weight: 600;
   font-size: 10px;
+  color: #fff;
 }
 .sign-up {
-  color: green;
+  color: #4834d4;
   text-decoration: none;
 }
 @media screen and (max-width: 600px) {
